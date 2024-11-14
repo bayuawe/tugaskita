@@ -1,16 +1,16 @@
 <script setup>
-import MainButton from './components/MainButton.vue'
-const name = 'App'
+import { defineAsyncComponent } from "vue";
+// import Components Asynchronously
+const Navbar = defineAsyncComponent(() => import("./components/Navbar.vue"))
+const HeroSection = defineAsyncComponent(() => import("./components/HeroSection.vue"))
 </script>
 
 <template>
-  <MainButton />
-  <MainButton />
-  <MainButton />
-  <MainButton />
-  <h1>{{ name }}</h1>
-  <h1>{{ name }}</h1>
-  <h1>{{ name }}</h1>
+  <div class="bg-gray-900 min-h-screen">
+
+    <Navbar />
+    <HeroSection />
+  </div>
 </template>
 
 <style scoped></style>
