@@ -3,6 +3,9 @@ import { defineAsyncComponent } from "vue";
 // import Components Asynchronously
 const Navbar = defineAsyncComponent(() => import("./components/Navbar.vue"))
 const HeroSection = defineAsyncComponent(() => import("./components/HeroSection.vue"))
+const ServiceSection = defineAsyncComponent(() => import("./components/ServiceSection.vue"))
+const AboutSection = defineAsyncComponent(() => import("./components/AboutSection.vue"))
+const OrderSection = defineAsyncComponent(() => import("./components/OrderSection.vue"))
 </script>
 
 <template>
@@ -10,6 +13,9 @@ const HeroSection = defineAsyncComponent(() => import("./components/HeroSection.
 
     <Navbar />
     <HeroSection />
+    <ServiceSection />
+    <AboutSection />
+    <OrderSection />`
   </div>
 </template>
 

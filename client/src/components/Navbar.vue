@@ -1,7 +1,7 @@
 <template>
   <header class="flex justify-between items-center p-6 bg-gray-900 shadow-lg relative z-20">
-    <div class="text-emerald-400 text-3xl font-bold tracking-wider hover:text-emerald-300 transition-colors">
-      Tugas Kita
+    <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-500">
+      TugasKita!
     </div>
 
     <!-- Mobile Toggle Button -->
